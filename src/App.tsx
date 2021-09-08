@@ -56,12 +56,12 @@ function App() {
         </Route>
 
 
-        <Route path="/tasks" >
+        <Route path="/tasks" exact>
           <Main setIsModal={setIsModal} color={color} />
           <Task color={color} />
         </Route>
 
-        <Route path="/graph" >
+        <Route path="/graph" exact>
           <Task color={color} />
         </Route>
 

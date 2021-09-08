@@ -1,6 +1,6 @@
 import { Container } from "./styles"
 import ImgCoffeeHome from "../../img/coffeeHome.jpg"
-
+import { Link } from "react-router-dom"
 
 export function Home() {
     return (
@@ -13,7 +13,7 @@ export function Home() {
                     </h2>
                     <span className="click-here">
                         Click here to
-                        <button>start</button>
+                        <Link to="/tasks" >start</Link>
                     </span>
                 </div>
 

@@ -31,7 +31,9 @@ export const Container = styled.div`
                 font-size: 2rem;
                 font-weight: bold;
 
-                button{
+                a{
+                    text-decoration: none;
+
                     margin-left: 1rem;
                     width: 100px;
                     padding: 0.5rem;
@@ -42,7 +44,11 @@ export const Container = styled.div`
                     font-weight: bold;
                     font-size: 1.25rem;
                     color: #219ebc;
-                    cursor: pointer
+                    cursor: pointer;
+                    &:hover{
+                    color: #48cae4;
+                    border: 2px solid #48cae4;
+                    }             
                 }
             }
         }

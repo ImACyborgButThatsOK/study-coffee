@@ -40,18 +40,18 @@ function App() {
       <UserProvider>
         <GlobalStyles colorButtonProps={color} />
 
-        <Header
-          color={color}
-          modalProps={{
-            isModal,
-            isModalLogin,
-            handleOpenModal,
-            handleCloseModal,
-            handleOpenModalLogin,
-            handleCloseModalLogin
-          }} />
+        <Route path="/" >
+          <Header
+            color={color}
+            modalProps={{
+              isModal,
+              isModalLogin,
+              handleOpenModal,
+              handleCloseModal,
+              handleOpenModalLogin,
+              handleCloseModalLogin
+            }} />
 
-        <Route path="/home" >
           <Main setIsModal={setIsModal} color={color} />
         </Route>
 

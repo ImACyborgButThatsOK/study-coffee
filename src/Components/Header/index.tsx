@@ -29,7 +29,7 @@ export function Header({ color, modalProps }: any) {
 
                 <nav>
                     <ul>
-                        <Link to="/home">Home</Link>
+                        <Link to="/">Home</Link>
                         <Link to="/tasks">Tasks</Link>
                         <Link to="/music">Music</Link>
                         <Link to="/about">About</Link>

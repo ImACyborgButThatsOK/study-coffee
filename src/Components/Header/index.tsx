@@ -31,8 +31,9 @@ export function Header({ color, modalProps }: any) {
                     <ul>
                         <Link to="/">Home</Link>
                         <Link to="/tasks">Tasks</Link>
-                        <Link to="/music">Music</Link>
-                        <Link to="/about">About</Link>
+                        <Link to="/graph">Graph</Link>
+                        {/* <Link to="/music">Music</Link> */}
+                        {/* <Link to="/about">About</Link> */}
                         {
                             !token && (
                                 <>

@@ -54,12 +54,18 @@ function App() {
 
           <Home />
         </Route>
-      
+
 
         <Route path="/tasks" >
           <Main setIsModal={setIsModal} color={color} />
           <Task color={color} />
         </Route>
+
+        <Route path="/graph" >
+          <Task color={color} />
+        </Route>
+
+
 
         <ButtonDarkAndWhiteMode colorButton={{ color, setColor }} />
       </UserProvider>

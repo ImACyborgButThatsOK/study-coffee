@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, } from "react-router-dom"
 
 import { GlobalStyles } from "./GlobalStyles";
 import { Task } from "./Components/Task";
+import { Home } from "./Components/Home";
 
 
 function App() {
@@ -39,29 +40,30 @@ function App() {
     <Router >
       <UserProvider>
         <GlobalStyles colorButtonProps={color} />
+        <Header
+          color={color}
+          modalProps={{
+            isModal,
+            isModalLogin,
+            handleOpenModal,
+            handleCloseModal,
+            handleOpenModalLogin,
+            handleCloseModalLogin
+          }} />
 
-        <Route path="/" >
-          <Header
-            color={color}
-            modalProps={{
-              isModal,
-              isModalLogin,
-              handleOpenModal,
-              handleCloseModal,
-              handleOpenModalLogin,
-              handleCloseModalLogin
-            }} />
+        <Route path="/home" exact>
 
-          <Main setIsModal={setIsModal} color={color} />
+          <Home />
         </Route>
 
         <Route path="/tasks" >
+          <Main setIsModal={setIsModal} color={color} />
           <Task color={color} />
         </Route>
 
         <ButtonDarkAndWhiteMode colorButton={{ color, setColor }} />
       </UserProvider>
-    </Router>
+    </Router >
   );
 }
 

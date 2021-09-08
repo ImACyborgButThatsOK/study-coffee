@@ -50,11 +50,11 @@ function App() {
             handleOpenModalLogin,
             handleCloseModalLogin
           }} />
-
-        <Route path="/home" exact>
+        <Route path="/" exact>
 
           <Home />
         </Route>
+      
 
         <Route path="/tasks" >
           <Main setIsModal={setIsModal} color={color} />

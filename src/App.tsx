@@ -58,7 +58,6 @@ function App() {
 
         <Route path="/tasks" exact>
           <Main setIsModal={setIsModal} color={color} />
-          <Task color={color} />
         </Route>
 
         <Route path="/graph" exact>

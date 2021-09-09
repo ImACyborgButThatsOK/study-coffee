@@ -1,4 +1,3 @@
-import { useState, FormEvent } from "react";
 import { useForm } from "react-hook-form"
 import Modal from "react-modal";
 import { useRequestUser } from "../../hook/api";

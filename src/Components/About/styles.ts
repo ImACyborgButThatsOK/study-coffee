@@ -15,7 +15,7 @@ export const Container = styled.div`
         font-family: 'Courier New', Courier, monospace;
         font-size: 1.5rem;
         line-height: 3rem;
-        color: white;
+        color: ${p => p.color ? "#000000" : "#ffffff"};
 
     }
     img{

@@ -1,11 +1,11 @@
 import { Container } from "./styles";
 import ImgStudyAbout from "../../img/studyAbout.gif"
 
-export function About() {
+export function About({ color }: any) {
     return (
         <>
 
-            <Container>
+            <Container color={color}>
 
                 <div className="text-about">
 

@@ -67,7 +67,7 @@ function App() {
 
 
         <Route path="/about" exact>
-          <About />
+          <About color={color} />
         </Route>
 
         <ButtonDarkAndWhiteMode colorButton={{ color, setColor }} />

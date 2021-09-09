@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled.header`
         overflow: hidden;
-        background-color:${(props: any) => (props.color === "activeColor" ? "#e63946" : "#0f0f0f")};
+        background-color:${(props: any) => (props.color === "activeColor" ? "#c71f37" : "#0f0f0f")};
         height: 250px;
     h1{
         position: relative;
@@ -38,7 +38,7 @@ export const Container = styled.header`
             text-decoration: none;
             margin-left: 1rem;
             padding: 1rem;
-            border-radius: 0.5rem;
+            border-radius: 0.4rem;
 
             font-family: 'Courier New', Courier, monospace;
             font-weight: bold;
@@ -46,11 +46,12 @@ export const Container = styled.header`
             color: white;
 
             &:hover{
-                background-color: ${(props: any) => (props.colorProps ? "#8d99ae" : "#46494c")};
+                background-color: ${(props: any) => (props.color ? "#222222" : "#222222")};
+                color: ${(props: any) => (props.color ? "#49cce4" : "#ef8354")} ;
             }
             &:first-child{
                 background-color: #222222;
-                color: #ef8354;
+                color: ${(props: any) => (props.color ? "#49cce4" : "#ef8354")} ;
             }
             }
         }

@@ -10,7 +10,8 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body{
-        background-color: ${(props: any) => (props.colorButtonProps === "activeColor" ? '#ffffff' : "#212529")};
+        background-color:
+         ${(props: any) => (props.colorButtonProps === "activeColor" ? '#f8edeb' : "#212529")};
     }
 
     .react-modal-overlay{

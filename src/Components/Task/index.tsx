@@ -97,17 +97,24 @@ export function Task({ color }: any) {
 
                                 {
                                     task.map((response: any) => {
-                                        return response.status && (
-                                            <tr key={response.id}>
-                                                <td>{response.task}</td>
-                                                <td>
-                                                    {
-                                                        new Intl.DateTimeFormat('pt-BR',
-                                                            { timeZone: 'UTC' })
-                                                            .format(new Date(response.created_at))
-                                                    }
-                                                </td>
-                                            </tr>
+                                        const [day] = new Intl.DateTimeFormat("pt-br").format(new Date(response.created_at)).split("/");
+                                        const [compareDay] = new Intl.DateTimeFormat("pt-br").format(new Date()).split("/");
+                                        if (day === compareDay) {
+                                            return response.status && (
+                                                <tr key={response.id}>
+                                                    <td>{response.task}</td>
+                                                    <td>
+                                                        {
+                                                            new Intl.DateTimeFormat('pt-BR',
+                                                                { timeZone: 'UTC' })
+                                                                .format(new Date(response.created_at))
+                                                        }
+                                                    </td>
+                                                </tr>
+                                            )
+                                        }
+                                        return (
+                                            <></>
                                         )
                                     })
                                 }
@@ -132,17 +139,24 @@ export function Task({ color }: any) {
 
                                 {
                                     task.map((response: any) => {
-                                        return !response.status && (
-                                            <tr key={response.id}>
-                                                <td>{response.task}</td>
-                                                <td>
-                                                    {
-                                                        new Intl.DateTimeFormat('pt-BR',
-                                                            { timeZone: 'UTC' })
-                                                            .format(new Date(response.created_at))
-                                                    }
-                                                </td>
-                                            </tr>
+                                        const [day] = new Intl.DateTimeFormat("pt-br").format(new Date(response.created_at)).split("/");
+                                        const [compareDay] = new Intl.DateTimeFormat("pt-br").format(new Date()).split("/");
+                                        if (day === compareDay) {
+                                            return !response.status && (
+                                                <tr key={response.id}>
+                                                    <td>{response.task}</td>
+                                                    <td>
+                                                        {
+                                                            new Intl.DateTimeFormat('pt-BR',
+                                                                { timeZone: 'UTC' })
+                                                                .format(new Date(response.created_at))
+                                                        }
+                                                    </td>
+                                                </tr>
+                                            )
+                                        }
+                                        return (
+                                            <></>
                                         )
                                     })
                                 }

@@ -52,7 +52,7 @@ function App() {
           }} />
         <Route path="/" exact>
 
-          <Home />
+          <Home color={color} />
         </Route>
 
 

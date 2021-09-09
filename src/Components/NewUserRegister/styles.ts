@@ -37,5 +37,38 @@ export const Container = styled.form`
         cursor: pointer
 
     }
+
+    span{
+        background-color: #f94144;
+    }
+    .error-username{
+        position: absolute;
+        padding: 1rem;
+        border-radius: 0.3rem;
+        top: 15rem;
+        right: 1rem;
+        color: #ffffff;
+    }
+    
+
+    .error-email{
+        position: absolute;
+        padding: 1rem;
+        border-radius: 0.3rem;
+        top: 21rem;
+        right: 3.5rem;
+        color: #ffffff;
+    }
+  
+
+    .error-password{
+        position: absolute;
+        padding: 1rem;
+        border-radius: 0.3rem;
+        top: 26.5rem;
+        right: 1rem;
+        color: #ffffff;
+    }
+  
   
 `;

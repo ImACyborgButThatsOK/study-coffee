@@ -38,4 +38,25 @@ padding: 4rem;
         cursor: pointer
 
     }
+    span{
+        background-color: #f94144;
+    }
+    .error-email{
+        position: absolute;
+        padding: 1rem;
+        border-radius: 0.3rem;
+        top: 15rem;
+        right: 4rem;
+        color: #ffffff;
+    }
+  
+
+    .error-password{
+        position: absolute;
+        padding: 1rem;
+        border-radius: 0.3rem;
+        top: 21rem;
+        right: 4rem;
+        color: #ffffff;
+    }
 `

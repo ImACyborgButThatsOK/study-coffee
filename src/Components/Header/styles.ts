@@ -58,18 +58,15 @@ export const Container = styled.header`
 
         .user-sign-in{
            position: absolute;
-           margin-left: 20rem;
+           margin-left: 30rem;
            bottom: -1rem;
         }
 
         .user-login{
            position: absolute; 
-           margin-left: 27rem;
+           margin-left: 37rem;
            bottom: -1rem;
         }
-
-
-
 
         @media screen and (max-width:1199px){
          

@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, } from "react-router-dom"
 import { GlobalStyles } from "./GlobalStyles";
 import { Task } from "./Components/Task";
 import { Home } from "./Components/Home";
+import { About } from "./Components/About";
 
 
 function App() {
@@ -65,6 +66,9 @@ function App() {
         </Route>
 
 
+        <Route path="/about" exact>
+          <About />
+        </Route>
 
         <ButtonDarkAndWhiteMode colorButton={{ color, setColor }} />
       </UserProvider>
